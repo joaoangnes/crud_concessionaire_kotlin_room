@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".CadastroActivity">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Veículo"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtPlacaVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:hint="Informe a Placa do veículo:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtMarcaVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Informe a Marca do veículo:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtModeloVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Informe a Modelo do veículo:"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtAnoFabricacaoVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Informe o ano de fabricação do veículo:"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edtPrecoVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"
+        android:digits="0123456789.,"
+        android:hint="Informe o Preço a ser vendido do veículo:"/>
+    <Button
+        android:id="@+id/btnSalvarVeiculo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:text="Salvar Veículo" />
+
+    <Button
+        android:id="@+id/btnDeletarVeiculo"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:text="Deletar Veículo" />
+
+</LinearLayout>
